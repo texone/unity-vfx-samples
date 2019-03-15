@@ -277,6 +277,37 @@ MonoBehaviour:
   blockerSampleCount: 24
   filterSampleCount: 16
   minFilterSize: 0.00001
+--- !u!1 &304336949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 304336950}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &304336950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304336949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.1307087, y: -3.0769744, z: -22.417612}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 689760022}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689760019
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,12 +319,14 @@ GameObject:
   - component: {fileID: 689760022}
   - component: {fileID: 689760021}
   - component: {fileID: 689760020}
+  - component: {fileID: 689760023}
+  - component: {fileID: 689760024}
   m_Layer: 0
-  m_Name: Visual Effect
+  m_Name: background particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!73398921 &689760020
 VFXRenderer:
@@ -312,6 +345,7 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -345,17 +379,101 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: BackgroundScale
+        m_Overridden: 0
+      - m_Value: 2
+        m_Name: BackgroundTextureAspect
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: ContentScale
+        m_Overridden: 0
+      - m_Value: 0
+        m_Name: ContentTextureAspect
+        m_Overridden: 0
+      - m_Value: 10
+        m_Name: EmitBackLifetime
+        m_Overridden: 1
+      - m_Value: 3000
+        m_Name: EmitContentCount
+        m_Overridden: 1
+      - m_Value: 0.134
+        m_Name: EmitProbBack
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: IlluScale
+        m_Overridden: 0
+      - m_Value: 0
+        m_Name: IlluTextureAspect
+        m_Overridden: 0
+      - m_Value: 20
+        m_Name: Lifetime
+        m_Overridden: 0
+      - m_Value: 0.79
+        m_Name: random speed
+        m_Overridden: 0
+      - m_Value: 0.1
+        m_Name: randomTarget
+        m_Overridden: 0
+      - m_Value: 0.87
+        m_Name: Stick Distance
+        m_Overridden: 1
+      - m_Value: 9.8
+        m_Name: Stick Force
+        m_Overridden: 1
+      - m_Value: 1.5
+        m_Name: StopPoint
+        m_Overridden: 0
+      - m_Value: 3.5
+        m_Name: TurbulenceIntensity
+        m_Overridden: 1
+      - m_Value: 0.365
+        m_Name: TurbulenceMinAge
+        m_Overridden: 1
+      - m_Value: 7.5
+        m_Name: TurbulenceScale
+        m_Overridden: 1
+      - m_Value: 0.35
+        m_Name: TurbulenceSpeed
+        m_Overridden: 1
+      - m_Value: 0.076
+        m_Name: TurbulenceThreshold
+        m_Overridden: 1
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0}
+        m_Name: BackgroundOffset
+        m_Overridden: 0
+      - m_Value: {x: 0, y: 0}
+        m_Name: ContentOffset
+        m_Overridden: 0
+      - m_Value: {x: 21.3, y: 12.5}
+        m_Name: EmitBackSize
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 0}
+        m_Name: IlluOffset
+        m_Overridden: 0
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1.952215, y: 3.0933247, z: 0.5}
+        m_Name: LastMousePosition
+        m_Overridden: 1
+      - m_Value: {x: 1.9387257, y: 3.1068137, z: 0.5}
+        m_Name: MousePosition
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
       m_Array: []
     m_Int:
-      m_Array: []
+      m_Array:
+      - m_Value: 10000
+        m_Name: EmitBackCount
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: EmitMouse
+        m_Overridden: 0
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
@@ -363,9 +481,24 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 2800000, guid: 2587d31339150ab4094ac311650aac6a, type: 3}
+        m_Name: BackgroundTexture
+        m_Overridden: 1
+      - m_Value: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
+        m_Name: ContentTexture
+        m_Overridden: 1
+      - m_Value: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
+        m_Name: IlluTexture
+        m_Overridden: 1
+      - m_Value: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
+        m_Name: Map
+        m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: MousePressed
+        m_Overridden: 1
 --- !u!4 &689760022
 Transform:
   m_ObjectHideFlags: 0
@@ -373,13 +506,74 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689760019}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.61, y: 3.0769744, z: 22.417612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 304336950}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689760023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689760019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de7d14e865f43945a267b3ca0dafe65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlaneCameraDistance: -23.5
+  _myBuildings:
+  - {fileID: 2800000, guid: 5a5f84a0f076ef54d80b5487202c453b, type: 3}
+  - {fileID: 2800000, guid: e813f4943c5d993449f5c6b211eb036d, type: 3}
+  - {fileID: 2800000, guid: e9fc8fb2e8be4f342996cc3c0d9df927, type: 3}
+  - {fileID: 2800000, guid: 2587d31339150ab4094ac311650aac6a, type: 3}
+  - {fileID: 2800000, guid: d7dcba75dc8b5794492e92310166be13, type: 3}
+  - {fileID: 2800000, guid: 63b5d963aef73b84a9dbf339b67af8e7, type: 3}
+  - {fileID: 2800000, guid: c78201f64202ba048bc9c75e683ab13a, type: 3}
+  - {fileID: 2800000, guid: 798c251f7284a7141ae90d8bd9599f2d, type: 3}
+  - {fileID: 2800000, guid: 656769536428e0a4f9b403980bd90381, type: 3}
+  content:
+    texture: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
+    offset: {x: -3.93, y: -3.37}
+    scale: 2
+    name: Content
+  illu:
+    texture: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
+    offset: {x: -1.92, y: -3.6}
+    scale: 2.56
+    name: Illu
+  background:
+    texture: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
+    offset: {x: 0, y: 0}
+    scale: 1
+    name: Background
+  myBuildingSwitchTime: 10
+  _mySwitchBuildingByTimer: 1
+  _myCurrentBuilding: 1
+  _myMaxNoIpnutTime: 10
+--- !u!95 &689760024
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689760019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9ba8bd2e2bf42b4cb74a780b32bd99e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1664659327
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +625,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.991467
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

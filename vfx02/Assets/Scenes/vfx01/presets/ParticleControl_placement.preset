@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ParticleControl_placement
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 8de7d14e865f43945a267b3ca0dafe65,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: myPlaneCameraDistance
+    value: -23.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.size
+    value: 9
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[0]
+    value: 
+    objectReference: {fileID: 2800000, guid: 5a5f84a0f076ef54d80b5487202c453b, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[1]
+    value: 
+    objectReference: {fileID: 2800000, guid: e813f4943c5d993449f5c6b211eb036d, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[2]
+    value: 
+    objectReference: {fileID: 2800000, guid: e9fc8fb2e8be4f342996cc3c0d9df927, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[3]
+    value: 
+    objectReference: {fileID: 2800000, guid: 2587d31339150ab4094ac311650aac6a, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[4]
+    value: 
+    objectReference: {fileID: 2800000, guid: d7dcba75dc8b5794492e92310166be13, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[5]
+    value: 
+    objectReference: {fileID: 2800000, guid: 63b5d963aef73b84a9dbf339b67af8e7, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[6]
+    value: 
+    objectReference: {fileID: 2800000, guid: c78201f64202ba048bc9c75e683ab13a, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[7]
+    value: 
+    objectReference: {fileID: 2800000, guid: 798c251f7284a7141ae90d8bd9599f2d, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _myBuildings.Array.data[8]
+    value: 
+    objectReference: {fileID: 2800000, guid: 656769536428e0a4f9b403980bd90381, type: 3}
+  - target: {fileID: 0}
+    propertyPath: content.texture
+    value: 
+    objectReference: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
+  - target: {fileID: 0}
+    propertyPath: content.offset.x
+    value: -3.93
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: content.offset.y
+    value: -3.37
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: content.scale
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: content.name
+    value: Content
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: illu.texture
+    value: 
+    objectReference: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
+  - target: {fileID: 0}
+    propertyPath: illu.offset.x
+    value: -1.92
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: illu.offset.y
+    value: -3.6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: illu.scale
+    value: 2.56
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: illu.name
+    value: Illu
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: background.texture
+    value: 
+    objectReference: {fileID: 2800000, guid: e813f4943c5d993449f5c6b211eb036d, type: 3}
+  - target: {fileID: 0}
+    propertyPath: background.offset.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: background.offset.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: background.scale
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: background.name
+    value: Background
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: myBuildingSwitchTime
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _mySwitchBuildingByTimer
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _myCurrentBuilding
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _myMaxNoIpnutTime
+    value: 57.9
+    objectReference: {fileID: 0}

@@ -1,7 +1,52 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.VFX;
+
+[Serializable]
+public class TextureContainer
+{
+    
+    
+    public Texture2D texture;
+
+    public Vector2 offset = new Vector2();
+
+    public float scale = 1;
+
+    public string name;
+
+    public TextureContainer(string theName)
+    {
+        name = theName;
+    }
+
+    private float aspect()
+    {
+        return (float) texture.width / texture.height;
+    }
+
+    public void set(VisualEffect effect)
+    {
+        effect.SetTexture(name +"Texture", texture);
+        effect.SetFloat(name + "TextureAspect", aspect());
+        effect.SetFloat(name + "Scale", scale);
+        effect.SetVector2(name + "Offset", offset);
+    }
+    
+    public void OnDrawGizmos()
+    {
+        float x0 = offset.x;
+        float x1 = offset.x + scale;
+        float y0 = offset.y;
+        float y1 = offset.y + scale;
+        Gizmos.DrawLine(new Vector3(x0, y0,0), new Vector3(x1, y0,0));
+        Gizmos.DrawLine(new Vector3(x0, y1,0), new Vector3(x1, y1,0));
+        Gizmos.DrawLine(new Vector3(x0, y0,0), new Vector3(x0, y1,0));
+        Gizmos.DrawLine(new Vector3(x1, y0,0), new Vector3(x1, y1,0));
+    }
+}
 
 public class ParticleControl : MonoBehaviour
 {
@@ -13,8 +58,20 @@ public class ParticleControl : MonoBehaviour
     public float myPlaneCameraDistance;
     Vector3 myPlanePosFromCamera;
 
+
+    public List<Texture2D> _myBuildings;
+
+    public TextureContainer content = new TextureContainer("Content");
+    public TextureContainer illu = new TextureContainer("Illu");
+    public TextureContainer background = new TextureContainer("Background");
+    
+    public float myBuildingSwitchTime = 10;
+    public bool _mySwitchBuildingByTimer = false;
+    public int _myCurrentBuilding = 0;
+    public float _myMaxNoIpnutTime = 10;
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         myEffect = GetComponent<VisualEffect>();
 
@@ -49,10 +106,47 @@ public class ParticleControl : MonoBehaviour
 
     Ray myCameraMouseRay;
     Vector3 myPlaneHit;
+    Vector3 myLastPlaneHit;
+
+
+    private float _myTimer = 1000;
+
+    private float _myNoInputTimer = 0;
+
+    private void SetTexture(string theTextureName, Texture2D theTexture)
+    {
+        myEffect.SetTexture(theTextureName +"Texture", theTexture);
+        myEffect.SetFloat(theTextureName + "TextureAspect", (float)theTexture.width / theTexture.height);
+    }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        _myTimer += Time.deltaTime;
+        
+        if(_myTimer > myBuildingSwitchTime && _mySwitchBuildingByTimer)
+        {
+            print(_myTimer);
+            _myCurrentBuilding++;
+            _myCurrentBuilding %= _myBuildings.Count;
+            _myTimer = 0;
+        }
+
+        _myNoInputTimer += Time.deltaTime;
+        if (_myNoInputTimer > _myMaxNoIpnutTime)
+        {
+            myEffect.SetFloat("StopPoint", 1.1f);
+        }
+        else
+        {
+            myEffect.SetFloat("StopPoint", 0.5f);
+        }
+        background.texture = _myBuildings[_myCurrentBuilding];
+        background.set(myEffect);
+        content.set(myEffect);
+        illu.set(myEffect);
+
+        myEffect.SetBool("MousePressed", false);
         if (Input.GetMouseButton(0))
         {
             ;
@@ -71,12 +165,16 @@ public class ParticleControl : MonoBehaviour
             if (myGroundPlane.Raycast(myCameraMouseRay, out enter))
             {
                 //Get the point that is clicked
+                myLastPlaneHit = myPlaneHit;
                 myPlaneHit = myCameraMouseRay.GetPoint(enter);
 
                 myEffect.SetVector3("MousePosition", myPlaneHit);
+                myEffect.SetVector3("LastMousePosition", myLastPlaneHit);
+                myEffect.SetBool("MousePressed", true);
+                _myNoInputTimer = 0;
             }
 
-            DrawPlane(myPlanePosFromCamera, myGroundPlane.normal);
+            DrawPlane(myPlanePosFromCamera, myGroundPlane.normal); 
 
             
         }
@@ -87,5 +185,8 @@ public class ParticleControl : MonoBehaviour
         Gizmos.DrawRay(myCameraMouseRay);
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(myPlaneHit, 1);
+        
+        content.OnDrawGizmos();
+        illu.OnDrawGizmos();
     }
 }
