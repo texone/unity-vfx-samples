@@ -1,0 +1,503 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: defualt
+  m_TargetType:
+    m_NativeTypeID: 2083052967
+    m_ManagedTypePPtr: {fileID: 0}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_Asset
+    value: 
+    objectReference: {fileID: 8926484042661614526, guid: c753bc5bbdc5dab48880e0ee48707821,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_StartSeed
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ResetSeedOnPlay
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Name
+    value: BackgroundScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[0].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Value
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Name
+    value: BackgroundTextureAspect
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Name
+    value: ContentScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Name
+    value: ContentTextureAspect
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[3].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Value
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Name
+    value: EmitBackLifetime
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[4].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Value
+    value: 3000
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Name
+    value: EmitContentCount
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[5].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Name
+    value: EmitProbBack
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[6].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Name
+    value: IlluScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[7].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Name
+    value: IlluTextureAspect
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[8].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Value
+    value: 20
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Name
+    value: Lifetime
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[9].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[10].m_Value
+    value: 0.79
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[10].m_Name
+    value: random speed
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[10].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[11].m_Value
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[11].m_Name
+    value: randomTarget
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[11].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[12].m_Value
+    value: 0.87
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[12].m_Name
+    value: Stick Distance
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[12].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[13].m_Value
+    value: 9.8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[13].m_Name
+    value: Stick Force
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[13].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[14].m_Value
+    value: 1.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[14].m_Name
+    value: StopPoint
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[14].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[15].m_Value
+    value: 3.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[15].m_Name
+    value: TurbulenceIntensity
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[15].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[16].m_Value
+    value: 0.365
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[16].m_Name
+    value: TurbulenceMinAge
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[16].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[17].m_Value
+    value: 7.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[17].m_Name
+    value: TurbulenceScale
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[17].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[18].m_Value
+    value: 0.35
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[18].m_Name
+    value: TurbulenceSpeed
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[18].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[19].m_Value
+    value: 0.076
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[19].m_Name
+    value: TurbulenceThreshold
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[19].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Name
+    value: BackgroundOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[0].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Name
+    value: ContentOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[1].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Value.x
+    value: 21.3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Value.y
+    value: 12.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Name
+    value: EmitBackSize
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Value.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Value.y
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Name
+    value: IlluOffset
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector2f.m_Array.Array.data[3].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.x
+    value: 1.952215
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.y
+    value: 3.0933247
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Value.z
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Name
+    value: LastMousePosition
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.x
+    value: 1.9387257
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.y
+    value: 3.1068137
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Value.z
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Name
+    value: MousePosition
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Vector4f.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Uint.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Value
+    value: 10000
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Name
+    value: EmitBackCount
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Name
+    value: EmitMouse
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Int.m_Array.Array.data[1].m_Overridden
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Matrix4x4f.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_AnimationCurve.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Gradient.m_Array.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.size
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: 2587d31339150ab4094ac311650aac6a, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Name
+    value: BackgroundTexture
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Name
+    value: ContentTexture
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[1].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Name
+    value: IlluTexture
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[2].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Value
+    value: 
+    objectReference: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Name
+    value: Map
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[3].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Bool.m_Array.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Name
+    value: MousePressed
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_PropertySheet.m_Bool.m_Array.Array.data[0].m_Overridden
+    value: 1
+    objectReference: {fileID: 0}
