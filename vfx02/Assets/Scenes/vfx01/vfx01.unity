@@ -140,7 +140,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 689760022}
-  - {fileID: 933904117}
+  - {fileID: 1106358476}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -157,7 +157,6 @@ GameObject:
   - component: {fileID: 689760020}
   - component: {fileID: 689760023}
   - component: {fileID: 689760024}
-  - component: {fileID: 689760025}
   m_Layer: 10
   m_Name: background particles
   m_TagString: Untagged
@@ -254,7 +253,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0}
         m_Name: BackgroundOffset
         m_Overridden: 0
-      - m_Value: {x: 21, y: 12.5}
+      - m_Value: {x: 21.5, y: 12.5}
         m_Name: EmitBackSize
         m_Overridden: 1
     m_Vector3f:
@@ -331,11 +330,11 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 656769536428e0a4f9b403980bd90381, type: 3}
   background:
     quad: {fileID: 0}
-    texture: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
     offset: {x: 0, y: 0}
-    scale: 1
-    name: Background
+    queue: 3003
+    texture: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
     flip: 0
+    scale: 1
   myBuildingSwitchTime: 10
   _mySwitchBuildingByTimer: 1
   _myCurrentBuilding: 1
@@ -358,21 +357,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &689760025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689760019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0cf421287e25e468db9f78bbbde7d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myPlaneCameraDistance: -23.5
-  _myMaxNoIpnutTime: 10
---- !u!1 &933904116
+--- !u!1 &1106358475
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,191 +365,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 933904117}
-  - component: {fileID: 933904119}
-  - component: {fileID: 933904118}
-  - component: {fileID: 933904120}
+  - component: {fileID: 1106358476}
   m_Layer: 10
-  m_Name: GameObject
+  m_Name: contentParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &933904117
+--- !u!4 &1106358476
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933904116}
+  m_GameObject: {fileID: 1106358475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.06, y: 3.076974, z: 22.41761}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.02, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 304336950}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!73398921 &933904118
-VFXRenderer:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933904116}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!2083052967 &933904119
-VisualEffect:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933904116}
-  m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 608dc9c2fcf3dfb4fb644a5e33778720, type: 3}
-  m_StartSeed: 0
-  m_ResetSeedOnPlay: 1
-  m_PropertySheet:
-    m_Float:
-      m_Array:
-      - m_Value: 1
-        m_Name: ContentScale
-        m_Overridden: 1
-      - m_Value: 1.506
-        m_Name: ContentTextureAspect
-        m_Overridden: 1
-      - m_Value: 3000
-        m_Name: EmitContentCount
-        m_Overridden: 1
-      - m_Value: 1
-        m_Name: IlluScale
-        m_Overridden: 1
-      - m_Value: 1.0594931
-        m_Name: IlluTextureAspect
-        m_Overridden: 1
-      - m_Value: 20
-        m_Name: Lifetime
-        m_Overridden: 0
-      - m_Value: 0.79
-        m_Name: random speed
-        m_Overridden: 0
-      - m_Value: 0.1
-        m_Name: randomTarget
-        m_Overridden: 0
-      - m_Value: 0.87
-        m_Name: Stick Distance
-        m_Overridden: 1
-      - m_Value: 9.8
-        m_Name: Stick Force
-        m_Overridden: 1
-      - m_Value: 1.5
-        m_Name: StopPoint
-        m_Overridden: 0
-      - m_Value: 3.5
-        m_Name: TurbulenceIntensity
-        m_Overridden: 1
-      - m_Value: 0.365
-        m_Name: TurbulenceMinAge
-        m_Overridden: 1
-      - m_Value: 7.5
-        m_Name: TurbulenceScale
-        m_Overridden: 1
-      - m_Value: 0.35
-        m_Name: TurbulenceSpeed
-        m_Overridden: 1
-      - m_Value: 0.076
-        m_Name: TurbulenceThreshold
-        m_Overridden: 1
-    m_Vector2f:
-      m_Array:
-      - m_Value: {x: 0, y: 0}
-        m_Name: ContentOffset
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 0}
-        m_Name: IlluOffset
-        m_Overridden: 1
-    m_Vector3f:
-      m_Array:
-      - m_Value: {x: 1.952215, y: 3.0933247, z: 0.5}
-        m_Name: LastMousePosition
-        m_Overridden: 1
-      - m_Value: {x: 1.9387257, y: 3.1068137, z: 0.5}
-        m_Name: MousePosition
-        m_Overridden: 1
-    m_Vector4f:
-      m_Array: []
-    m_Uint:
-      m_Array: []
-    m_Int:
-      m_Array:
-      - m_Value: 0
-        m_Name: EmitMouse
-        m_Overridden: 0
-    m_Matrix4x4f:
-      m_Array: []
-    m_AnimationCurve:
-      m_Array: []
-    m_Gradient:
-      m_Array: []
-    m_NamedObject:
-      m_Array:
-      - m_Value: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
-        m_Name: ContentTexture
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
-        m_Name: IlluTexture
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
-        m_Name: Map
-        m_Overridden: 1
-    m_Bool:
-      m_Array:
-      - m_Value: 0
-        m_Name: MousePressed
-        m_Overridden: 1
---- !u!114 &933904120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 933904116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f0cf421287e25e468db9f78bbbde7d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myPlaneCameraDistance: -23.5
-  _myMaxNoIpnutTime: 10
 --- !u!1 &1416385932
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +508,7 @@ Camera:
   far clip plane: 1000
   field of view: 30
   orthographic: 1
-  orthographic size: 6.24
+  orthographic size: 6.25
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -710,7 +532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416385932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2056887423}
@@ -804,7 +626,7 @@ Transform:
   m_GameObject: {fileID: 1564396182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 13.42}
-  m_LocalScale: {x: 32.4, y: 19.2, z: 1}
+  m_LocalScale: {x: 21.5, y: 12.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -862,7 +684,7 @@ Camera:
   far clip plane: 1000
   field of view: 30
   orthographic: 1
-  orthographic size: 6.24
+  orthographic size: 6.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1004,144 +826,174 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textureMaterial: {fileID: 2100000, guid: efe41e8fb2b7ea642898f265584d048e, type: 2}
+  colorMaterial: {fileID: 2100000, guid: 746054a03165d4a4482663b70977cb70, type: 2}
+  contentPrefab: {fileID: 4436301727337051723, guid: 194d49820352bc54a8d85450edb62999,
+    type: 3}
+  contentParent: {fileID: 1106358475}
+  previewPositions: 1
   items:
-  - content:
+  - mouseArea:
       quad: {fileID: 0}
+      offset: {x: -4.04, y: -6.09}
+      queue: 2999
+      scale: {x: 5.43, y: 4.13}
+    content:
+      quad: {fileID: 0}
+      offset: {x: -3.59, y: -4.04}
+      queue: 3003
       texture: {fileID: 2800000, guid: e6e0a5023057e3e4cb75d3a41de60ac1, type: 3}
-      offset: {x: -1.43, y: -3.13}
+      flip: 0
       scale: 1.69
-      name: 
-      flip: 0
     title:
       quad: {fileID: 0}
+      offset: {x: -3.41, y: -5.05}
+      queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
-      offset: {x: -0.67, y: -4.32}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     date:
       quad: {fileID: 0}
+      offset: {x: -3.52, y: -5.8}
+      queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
-      offset: {x: -0.82, y: -4.98}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     illu:
       quad: {fileID: 0}
+      offset: {x: -1.91, y: -5.76}
+      queue: 3000
       texture: {fileID: 2800000, guid: a78b59bddfffdbf4395f0dec6f39299d, type: 3}
-      offset: {x: 1.44, y: -4.03}
+      flip: 0
       scale: 3.18
-      name: 
-      flip: 0
-  - content:
+  - mouseArea:
       quad: {fileID: 0}
-      texture: {fileID: 2800000, guid: 3a4a6e9a6978bb149849afcb1a72cc0a, type: 3}
+      offset: {x: -0.01, y: 2.24}
+      queue: 2999
+      scale: {x: 6.18, y: 3.99}
+    content:
+      quad: {fileID: 0}
       offset: {x: 2.29, y: 3.48}
+      queue: 3003
+      texture: {fileID: 2800000, guid: 3a4a6e9a6978bb149849afcb1a72cc0a, type: 3}
+      flip: 0
       scale: 1.75
-      name: 
-      flip: 0
     title:
       quad: {fileID: 0}
+      offset: {x: 2.16, y: 3.49}
+      queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
-      offset: {x: 3.12, y: 4.34}
-      scale: 0.85
-      name: 
       flip: 1
+      scale: 0.85
     date:
       quad: {fileID: 0}
+      offset: {x: 2.26, y: 4.18}
+      queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
-      offset: {x: 3.26, y: 5.04}
-      scale: 0.85
-      name: 
       flip: 1
+      scale: 0.85
     illu:
       quad: {fileID: 0}
+      offset: {x: -1.46, y: 2.79}
+      queue: 3000
       texture: {fileID: 2800000, guid: a78b59bddfffdbf4395f0dec6f39299d, type: 3}
-      offset: {x: 0, y: 3.78}
+      flip: 1
       scale: 3.15
-      name: 
-      flip: 1
-  - content:
+  - mouseArea:
       quad: {fileID: 0}
+      offset: {x: 3.24, y: -5.99}
+      queue: 2999
+      scale: {x: 5.36, y: 4.67}
+    content:
+      quad: {fileID: 0}
+      offset: {x: 3.48, y: -4.09}
+      queue: 3003
       texture: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
-      offset: {x: 5.12, y: -3.36}
+      flip: 0
       scale: 1.76
-      name: 
-      flip: 0
     title:
       quad: {fileID: 0}
+      offset: {x: 4.28, y: -5.05}
+      queue: 3002
       texture: {fileID: 2800000, guid: 0b521d375f1ad6249a95b322f5c147cc, type: 3}
-      offset: {x: 6.52, y: -4.82}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     date:
       quad: {fileID: 0}
+      offset: {x: 4.17, y: -5.78}
+      queue: 3001
       texture: {fileID: 2800000, guid: f89776ae05be60c4fa04bf503853e716, type: 3}
-      offset: {x: 6.4, y: -5.46}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     illu:
       quad: {fileID: 0}
+      offset: {x: 5.22, y: -4.45}
+      queue: 3000
       texture: {fileID: 2800000, guid: f383a3b4dcb4f7a4cbb705f7a69fa79c, type: 3}
-      offset: {x: 7.13, y: -3.01}
+      flip: 0
       scale: 2.77
-      name: 
-      flip: 0
-  - content:
+  - mouseArea:
       quad: {fileID: 0}
+      offset: {x: -8.87, y: 1.31}
+      queue: 2999
+      scale: {x: 4.87, y: 4.61}
+    content:
+      quad: {fileID: 0}
+      offset: {x: -6.91, y: 2.08}
+      queue: 3003
       texture: {fileID: 2800000, guid: f897a6b69f243f241b45d48a8c441d42, type: 3}
-      offset: {x: -6.09, y: 3.4}
+      flip: 1
       scale: 2.08
-      name: 
-      flip: 1
     title:
       quad: {fileID: 0}
+      offset: {x: -8.63, y: 4.31}
+      queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
-      offset: {x: -7.21, y: 4.87}
-      scale: 0.85
-      name: 
       flip: 1
+      scale: 0.85
     date:
       quad: {fileID: 0}
+      offset: {x: -8.52, y: 5.04}
+      queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
-      offset: {x: -7.09, y: 5.57}
-      scale: 0.85
-      name: 
       flip: 1
+      scale: 0.85
     illu:
       quad: {fileID: 0}
+      offset: {x: -9.69, y: 0.49}
+      queue: 3000
       texture: {fileID: 2800000, guid: beaa732faf8737a429c4d886b0d7f5eb, type: 3}
-      offset: {x: -8.23, y: 2.93}
-      scale: 4.42
-      name: 
       flip: 1
-  - content:
+      scale: 4.42
+  - mouseArea:
       quad: {fileID: 0}
+      offset: {x: -10.19, y: -6.03}
+      queue: 2999
+      scale: {x: 4.42, y: 4.48}
+    content:
+      quad: {fileID: 0}
+      offset: {x: -11.36, y: -4.7}
+      queue: 3003
       texture: {fileID: 2800000, guid: 152d1bd7b9382f349983b7a296c082fb, type: 3}
-      offset: {x: -8.11, y: -3.49}
-      scale: 2.66
-      name: 
       flip: 0
+      scale: 2.66
     title:
       quad: {fileID: 0}
+      offset: {x: -8.84, y: -4.96}
+      queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
-      offset: {x: -5.53, y: -4.96}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     date:
       quad: {fileID: 0}
+      offset: {x: -8.95, y: -5.74}
+      queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
-      offset: {x: -5.66, y: -5.59}
-      scale: 0.85
-      name: 
       flip: 0
+      scale: 0.85
     illu:
       quad: {fileID: 0}
+      offset: {x: -8.89, y: -4.92}
+      queue: 3000
       texture: {fileID: 2800000, guid: fa7627ff8c4c988468fafaf2f64017a5, type: 3}
-      offset: {x: -5.43, y: -3.45}
-      scale: 3.41
-      name: 
       flip: 0
+      scale: 3.41
