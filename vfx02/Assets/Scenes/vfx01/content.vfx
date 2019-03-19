@@ -315,70 +315,6 @@ MonoBehaviour:
   m_UISuperCollapsed: 0
   m_UIInfos: {fileID: 114340500867371532}
   m_ParameterInfo:
-  - name: EmitBack
-    path: 
-    tooltip: 
-    sheetType: 
-    realType: 
-    defaultValue:
-      m_Type:
-        m_SerializableType: 
-      m_SerializableObject: 
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: EmitProbBack
-    path: EmitProbBack
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
-    min: 0
-    max: 1
-    descendantCount: 0
-  - name: EmitBackSize
-    path: EmitBackSize
-    tooltip: 
-    sheetType: m_Vector2f
-    realType: Vector2
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":10.0,"y":10.0}'
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: EmitBackCount
-    path: EmitBackCount
-    tooltip: 
-    sheetType: m_Int
-    realType: Int32
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: EmitBackLifetime
-    path: EmitBackLifetime
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
   - name: EmitContent
     path: 
     tooltip: 
@@ -751,58 +687,6 @@ MonoBehaviour:
     min: -Infinity
     max: Infinity
     descendantCount: 0
-  - name: BackgroundTexture
-    path: BackgroundTexture
-    tooltip: 
-    sheetType: m_NamedObject
-    realType: Texture2D
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"276d9e395ae18fe40a9b4988549f2349","type":3}}'
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: BackgroundTextureAspect
-    path: BackgroundTextureAspect
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: BackgroundScale
-    path: BackgroundScale
-    tooltip: 
-    sheetType: m_Float
-    realType: Single
-    defaultValue:
-      m_Type:
-        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
-  - name: BackgroundOffset
-    path: BackgroundOffset
-    tooltip: 
-    sheetType: m_Vector2f
-    realType: Vector2
-    defaultValue:
-      m_Type:
-        m_SerializableType: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0}'
-    min: -Infinity
-    max: Infinity
-    descendantCount: 0
   - name: Map
     path: Map
     tooltip: 
@@ -1018,7 +902,7 @@ VisualEffectResource:
       */velocity, mass, InvFieldTransform_a, FieldTransform_a, (float)0.9829919, tmp_cd,
       (float)0.8, (uint)3, deltaTime_a);\n\t\t\t}\n\t\t\t{\n\t\t\t    CollisionAABox_267A9(
       /*inout */position,  /*inout */velocity,  /*inout */age, lifetime, float3(0,0,0),
-      float3(10.02,10.14,2.32), (float)0.79, (float)0, (float)0, deltaTime_a, (float)-1,
+      float3(21.3,12.5,2.32), (float)0.79, (float)0, (float)0, deltaTime_a, (float)-1,
       (float)0);\n\t\t\t}\n\t\t\t{\n\t\t\t    int tmp_bb = (int)particleId;\n\t\t\t
       \   int tmp_bd = tmp_bb / (int)1000000;\n\t\t\t    int tmp_be = tmp_bd * (int)1000000;\n\t\t\t
       \   int tmp_bf = tmp_bb - tmp_be;\n\t\t\t    float tmp_bg = (float)tmp_bf;\n\t\t\t
@@ -1070,7 +954,7 @@ VisualEffectResource:
       * tmp_cc;\n\t\t    Turbulence_1(position,  /*inout */velocity, mass, InvFieldTransform_a,
       FieldTransform_a, (float)0.9829919, tmp_cd, (float)0.8, (uint)3, deltaTime_a);\n\t\t}\n\t\t{\n\t\t
       \   CollisionAABox_267A9( /*inout */position,  /*inout */velocity,  /*inout
-      */age, lifetime, float3(0,0,0), float3(10.02,10.14,2.32), (float)0.79, (float)0,
+      */age, lifetime, float3(0,0,0), float3(21.3,12.5,2.32), (float)0.79, (float)0,
       (float)0, deltaTime_a, (float)-1, (float)0);\n\t\t}\n\t\t{\n\t\t    int tmp_bb
       = (int)particleId;\n\t\t    int tmp_bd = tmp_bb / (int)1000000;\n\t\t    int
       tmp_be = tmp_bd * (int)1000000;\n\t\t    int tmp_bf = tmp_bb - tmp_be;\n\t\t
@@ -1808,7 +1692,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 71
           m_Value: {x: 0, y: 0, z: 0}
         - m_ExpressionIndex: 73
-          m_Value: {x: 10.02, y: 10.14, z: 2.32}
+          m_Value: {x: 21.3, y: 12.5, z: 2.32}
         - m_ExpressionIndex: 81
           m_Value: {x: 1, y: 1, z: 1}
       m_Vector4f:
@@ -5213,7 +5097,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615049}
   m_exposedName: MousePosition
   m_exposed: 1
-  m_Order: 28
+  m_Order: 22
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -5478,7 +5362,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615072}
   m_exposedName: Stick Force
   m_exposed: 1
-  m_Order: 30
+  m_Order: 24
   m_Category: Atractor
   m_Min:
     m_Type:
@@ -5554,7 +5438,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615074}
   m_exposedName: MousePressed
   m_exposed: 1
-  m_Order: 27
+  m_Order: 21
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -5809,7 +5693,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615086}
   m_exposedName: TurbulenceScale
   m_exposed: 1
-  m_Order: 5
+  m_Order: 3
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -5888,7 +5772,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615088}
   m_exposedName: TurbulenceSpeed
   m_exposed: 1
-  m_Order: 12
+  m_Order: 8
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -5964,7 +5848,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615091}
   m_exposedName: TurbulenceIntensity
   m_exposed: 1
-  m_Order: 20
+  m_Order: 14
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -6040,7 +5924,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615137}
   m_exposedName: EmitMouse
   m_exposed: 1
-  m_Order: 9
+  m_Order: 5
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -9620,7 +9504,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":10.020000457763672,"y":10.140000343322754,"z":2.319999933242798}}'
+      m_SerializableObject: '{"center":{"x":0.0,"y":0.0,"z":0.0},"size":{"x":21.299999237060548,"y":12.5,"z":2.319999933242798}}'
     m_Space: 0
   m_Property:
     name: box
@@ -9795,7 +9679,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615476}
   - {fileID: 8926484042661615477}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661615469}
   m_MasterData:
@@ -12258,7 +12142,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615600}
   m_exposedName: LastMousePosition
   m_exposed: 1
-  m_Order: 29
+  m_Order: 23
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -12785,7 +12669,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615783}
   m_exposedName: TurbulenceThreshold
   m_exposed: 1
-  m_Order: 15
+  m_Order: 11
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -12918,7 +12802,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615799}
   m_exposedName: TurbulenceMinAge
   m_exposed: 1
-  m_Order: 21
+  m_Order: 15
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -14129,7 +14013,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615863}
   m_exposedName: EmitContentCount
   m_exposed: 1
-  m_Order: 18
+  m_Order: 13
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -14205,7 +14089,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615865}
   m_exposedName: ContentTexture
   m_exposed: 1
-  m_Order: 2
+  m_Order: 1
   m_Category: render
   m_Min:
     m_Type:
@@ -14800,7 +14684,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615888}
   m_exposedName: Number of particles
   m_exposed: 0
-  m_Order: 22
+  m_Order: 16
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -15671,7 +15555,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615921}
   m_exposedName: randomTarget
   m_exposed: 1
-  m_Order: 23
+  m_Order: 17
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -16812,7 +16696,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615986}
   m_exposedName: random speed
   m_exposed: 1
-  m_Order: 24
+  m_Order: 18
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -17244,7 +17128,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615999}
   m_exposedName: Lifetime
   m_exposed: 1
-  m_Order: 25
+  m_Order: 19
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -17328,7 +17212,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616005}
   m_exposedName: StopPoint
   m_exposed: 1
-  m_Order: 26
+  m_Order: 20
   m_Category: EmitContent
   m_Min:
     m_Type:
@@ -17540,7 +17424,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616011}
   m_exposedName: IlluTexture
   m_exposed: 1
-  m_Order: 11
+  m_Order: 7
   m_Category: render
   m_Min:
     m_Type:
@@ -19156,7 +19040,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616084}
   m_exposedName: ContentTextureAspect
   m_exposed: 1
-  m_Order: 4
+  m_Order: 2
   m_Category: render
   m_Min:
     m_Type:
@@ -19232,7 +19116,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616086}
   m_exposedName: IlluTextureAspect
   m_exposed: 1
-  m_Order: 13
+  m_Order: 9
   m_Category: render
   m_Min:
     m_Type:
@@ -19580,7 +19464,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616110}
   m_exposedName: ContentScale
   m_exposed: 1
-  m_Order: 8
+  m_Order: 4
   m_Category: render
   m_Min:
     m_Type:
@@ -19656,7 +19540,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616112}
   m_exposedName: ContentOffset
   m_exposed: 1
-  m_Order: 10
+  m_Order: 6
   m_Category: render
   m_Min:
     m_Type:
@@ -19800,7 +19684,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616116}
   m_exposedName: IlluScale
   m_exposed: 1
-  m_Order: 14
+  m_Order: 10
   m_Category: render
   m_Min:
     m_Type:
@@ -19876,7 +19760,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616118}
   m_exposedName: IlluOffset
   m_exposed: 1
-  m_Order: 16
+  m_Order: 12
   m_Category: render
   m_Min:
     m_Type:
@@ -21490,7 +21374,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616203}
   m_exposedName: Map
   m_exposed: 1
-  m_Order: 33
+  m_Order: 25
   m_Category: render
   m_Min:
     m_Type:

@@ -136,7 +136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304336949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.1307087, y: -3.0769744, z: -22.417612}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 689760022}
@@ -254,7 +254,7 @@ VisualEffect:
       - m_Value: {x: 0, y: 0}
         m_Name: BackgroundOffset
         m_Overridden: 0
-      - m_Value: {x: 21.3, y: 12.5}
+      - m_Value: {x: 21, y: 12.5}
         m_Name: EmitBackSize
         m_Overridden: 1
     m_Vector3f:
@@ -301,7 +301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689760019}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.06, y: 3.0769744, z: 22.417612}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 304336950}
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 1
   clearColorMode: 0
-  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
+  backgroundColorHDR: {r: 0, g: 0.007970828, b: 0.4716981, a: 0}
   clearDepth: 1
   renderingPath: 0
   volumeLayerMask:
@@ -685,8 +685,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 30
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6.24
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -710,7 +710,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416385932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -23}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2056887423}
@@ -803,7 +803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564396182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 13}
+  m_LocalPosition: {x: 0, y: 0, z: 13.42}
   m_LocalScale: {x: 32.4, y: 19.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -861,8 +861,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 30
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 6.24
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

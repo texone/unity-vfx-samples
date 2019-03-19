@@ -1025,7 +1025,7 @@ VisualEffectResource:
       = tmp_bu ? uniform_e : (float)0;\n            float tmp_bw = tmp_x ? uniform_e
       : tmp_bv;\n            SetAttribute_F0142CB9( /*inout */lifetime, tmp_bw);\n
       \       }\n        {\n            SetAttribute_C707D62A( /*inout */position,
-      float3(0,0,0.23));\n        }\n        \n\n\n#if VFX_USE_ALIVE_CURRENT\n        if
+      float3(0,0,0.29));\n        }\n        \n\n\n#if VFX_USE_ALIVE_CURRENT\n        if
       (alive)\n        {\n\t\t\tuint deadIndex = deadListIn.DecrementCounter();\n
       \           uint index = deadListIn[deadIndex];\n            attributeBuffer.Store3((index
       * 0x8 + 0x0) << 2,asuint(position));\n            attributeBuffer.Store((index
@@ -1695,7 +1695,7 @@ VisualEffectResource:
         - m_ExpressionIndex: 36
           m_Value: {x: 0, y: 0, z: 0}
         - m_ExpressionIndex: 43
-          m_Value: {x: 0, y: 0, z: 0.23}
+          m_Value: {x: 0, y: 0, z: 0.29}
         - m_ExpressionIndex: 47
           m_Value: {x: 0, y: 0, z: 0.93}
         - m_ExpressionIndex: 54
@@ -6802,7 +6802,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615049}
   m_exposedName: MousePosition
   m_exposed: 1
-  m_Order: 28
+  m_Order: 16
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -7436,7 +7436,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615072}
   m_exposedName: Stick Force
   m_exposed: 1
-  m_Order: 30
+  m_Order: 18
   m_Category: Atractor
   m_Min:
     m_Type:
@@ -7512,7 +7512,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615074}
   m_exposedName: MousePressed
   m_exposed: 1
-  m_Order: 27
+  m_Order: 15
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -7759,7 +7759,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615086}
   m_exposedName: TurbulenceScale
   m_exposed: 1
-  m_Order: 5
+  m_Order: 8
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -7838,7 +7838,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615088}
   m_exposedName: TurbulenceSpeed
   m_exposed: 1
-  m_Order: 12
+  m_Order: 11
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -7914,7 +7914,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615091}
   m_exposedName: TurbulenceIntensity
   m_exposed: 1
-  m_Order: 20
+  m_Order: 13
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -7990,7 +7990,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615135}
   m_exposedName: EmitBackCount
   m_exposed: 1
-  m_Order: 6
+  m_Order: 9
   m_Category: EmitBack
   m_Min:
     m_Type:
@@ -8066,7 +8066,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615228}
   m_exposedName: EmitBackLifetime
   m_exposed: 1
-  m_Order: 7
+  m_Order: 10
   m_Category: EmitBack
   m_Min:
     m_Type:
@@ -8190,7 +8190,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615600}
   m_exposedName: LastMousePosition
   m_exposed: 1
-  m_Order: 29
+  m_Order: 17
   m_Category: Mouse
   m_Min:
     m_Type:
@@ -8360,7 +8360,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615615}
   m_exposedName: BackgroundTexture
   m_exposed: 1
-  m_Order: 0
+  m_Order: 1
   m_Category: render
   m_Min:
     m_Type:
@@ -11039,7 +11039,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615776}
   m_exposedName: EmitProbBack
   m_exposed: 1
-  m_Order: 1
+  m_Order: 2
   m_Category: EmitBack
   m_Min:
     m_Type:
@@ -11312,7 +11312,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615783}
   m_exposedName: TurbulenceThreshold
   m_exposed: 1
-  m_Order: 15
+  m_Order: 12
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -11445,7 +11445,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615799}
   m_exposedName: TurbulenceMinAge
   m_exposed: 1
-  m_Order: 21
+  m_Order: 14
   m_Category: Turbulence
   m_Min:
     m_Type:
@@ -11840,7 +11840,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615815}
   m_exposedName: BackgroundTextureAspect
   m_exposed: 1
-  m_Order: 1
+  m_Order: 3
   m_Category: render
   m_Min:
     m_Type:
@@ -12559,7 +12559,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.23000000417232514}'
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.28999999165534975}'
     m_Space: 2147483647
   m_Property:
     name: Position
@@ -12690,7 +12690,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616122}
   m_exposedName: BackgroundScale
   m_exposed: 1
-  m_Order: 2
+  m_Order: 4
   m_Category: render
   m_Min:
     m_Type:
@@ -12758,7 +12758,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616124}
   m_exposedName: BackgroundOffset
   m_exposed: 1
-  m_Order: 3
+  m_Order: 5
   m_Category: render
   m_Min:
     m_Type:
@@ -12894,7 +12894,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616178}
   m_exposedName: EmitBackSize
   m_exposed: 1
-  m_Order: 3
+  m_Order: 6
   m_Category: EmitBack
   m_Min:
     m_Type:
@@ -15075,7 +15075,7 @@ MonoBehaviour:
   - {fileID: 8926484042661616268}
   m_exposedName: Map
   m_exposed: 1
-  m_Order: 4
+  m_Order: 7
   m_Category: render
   m_Min:
     m_Type:

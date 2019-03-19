@@ -66,23 +66,23 @@ public class VFXMouseControl : MonoBehaviour
     private void Update()
     {
         
-
-        _myNoInputTimer += Time.deltaTime;
-        if (_myNoInputTimer > _myMaxNoIpnutTime)
-        {
-            myEffect.SetFloat("StopPoint", 1.1f);
-        }
-        else
-        {
-            myEffect.SetFloat("StopPoint", 0.5f);
+        if(myEffect.HasFloat("StopPoint")){
+            _myNoInputTimer += Time.deltaTime;
+            if (_myNoInputTimer > _myMaxNoIpnutTime)
+            {
+                myEffect.SetFloat("StopPoint", 1.1f);
+            }
+            else
+            {
+                myEffect.SetFloat("StopPoint", 0.5f);
+            }
         }
   
 
         myEffect.SetBool("MousePressed", false);
         if (Input.GetMouseButton(0))
         {
-            ;
-            Debug.Log(Camera.main.ScreenToViewportPoint(Input.mousePosition));
+            
             //This is how far away from the Camera the plane is placed
             myPlanePosFromCamera = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z - myPlaneCameraDistance);
             myGroundPlane.SetNormalAndPosition(Vector3.forward, myPlanePosFromCamera);
