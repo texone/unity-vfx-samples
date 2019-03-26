@@ -53,21 +53,15 @@ VisualEffect:
       - m_Value: 1.506
         m_Name: ContentTextureAspect
         m_Overridden: 1
-      - m_Value: 3000
+      - m_Value: 6000
         m_Name: EmitContentCount
-        m_Overridden: 1
-      - m_Value: 1
-        m_Name: IlluScale
-        m_Overridden: 1
-      - m_Value: 1.0594931
-        m_Name: IlluTextureAspect
         m_Overridden: 1
       - m_Value: 20
         m_Name: Lifetime
-        m_Overridden: 0
-      - m_Value: 0.79
+        m_Overridden: 1
+      - m_Value: 1.31
         m_Name: random speed
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 0.1
         m_Name: randomTarget
         m_Overridden: 0
@@ -80,7 +74,7 @@ VisualEffect:
       - m_Value: 1.5
         m_Name: StopPoint
         m_Overridden: 0
-      - m_Value: 3.5
+      - m_Value: 0.46
         m_Name: TurbulenceIntensity
         m_Overridden: 1
       - m_Value: 0.365
@@ -92,19 +86,16 @@ VisualEffect:
       - m_Value: 0.35
         m_Name: TurbulenceSpeed
         m_Overridden: 1
-      - m_Value: 0.076
+      - m_Value: 0.06
         m_Name: TurbulenceThreshold
         m_Overridden: 1
     m_Vector2f:
-      m_Array:
-      - m_Value: {x: 0, y: 0}
-        m_Name: ContentOffset
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 0}
-        m_Name: IlluOffset
-        m_Overridden: 1
+      m_Array: []
     m_Vector3f:
       m_Array:
+      - m_Value: {x: 0, y: 0, z: 0}
+        m_Name: ContentOffset
+        m_Overridden: 0
       - m_Value: {x: 1.952215, y: 3.0933247, z: 0.5}
         m_Name: LastMousePosition
         m_Overridden: 1
@@ -130,12 +121,6 @@ VisualEffect:
       m_Array:
       - m_Value: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
         m_Name: ContentTexture
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: 7df09d6c73b178348a3307b91a67e439, type: 3}
-        m_Name: IlluTexture
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
-        m_Name: Map
         m_Overridden: 1
     m_Bool:
       m_Array:
@@ -192,4 +177,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _myMaxNoIpnutTime: 10
-  camera: {fileID: 0}

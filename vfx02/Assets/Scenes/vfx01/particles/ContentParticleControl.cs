@@ -5,10 +5,8 @@ using UnityEngine;
 using UnityEngine.Experimental.VFX;
 
 
-
 public class ContentParticleControl : MonoBehaviour
 {
-
     VisualEffect _myEffect;
 
 
@@ -18,6 +16,8 @@ public class ContentParticleControl : MonoBehaviour
 
     private Item _myItem = null;
 
+    private TextureQuad _myTextureQuad = null;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -26,21 +26,34 @@ public class ContentParticleControl : MonoBehaviour
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
 
-    public void setItem(Item theItem)
+    public void setItem(Item theItem, TextureQuad theTextureQuad)
     {
         _myItem = theItem;
+        _myTextureQuad = theTextureQuad;
     }
 
     private float _myNoInputTimer = 0;
+    private float _myNoLastInputTimer = 0;
 
-    private void handleStop()
+    private void HandleTimer()
+    {
+        _myNoLastInputTimer = _myNoInputTimer;
+        _myNoInputTimer += Time.deltaTime;
+
+        if (_myNoInputTimer > _myMaxNoIpnutTime && _myNoLastInputTimer < _myMaxNoIpnutTime)
+        {
+           // _myEffect.Reinit();
+        }
+    }
+
+    private void HandleStop()
     {
         if (!_myEffect.HasFloat("StopPoint")) return;
 
-        _myNoInputTimer += Time.deltaTime;
         if (_myNoInputTimer > _myMaxNoIpnutTime)
         {
             _myEffect.SetFloat("StopPoint", 1.1f);
+           // Debug.Log("GO STOP");
         }
         else
         {
@@ -50,39 +63,82 @@ public class ContentParticleControl : MonoBehaviour
 
     private Vector3 _myLastWorldMouse;
 
-    private void handleMouseDown()
+    private void HandleMouseDown()
     {
         _myEffect.SetBool("MousePressed", false);
         if (!Input.GetMouseButton(0)) return;
 
-        Vector3 myMouseScreenCoord = new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.nearClipPlane);
-        Vector3 myMouseWorldPos = mainCamera.ScreenToWorldPoint(myMouseScreenCoord);
+        var myMouseScreenCoord =
+            new Vector3(Input.mousePosition.x, Input.mousePosition.y, mainCamera.nearClipPlane);
+        var myMouseWorldPos = mainCamera.ScreenToWorldPoint(myMouseScreenCoord);
 
-        if (_myItem.IsMouseInside(myMouseWorldPos))
+        if (_myItem.IsMouseInside(myMouseWorldPos) && _myIsInCue)
         {
-            Debug.Log("YO");
             _myEffect.SetVector3("MousePosition", myMouseWorldPos);
             _myEffect.SetVector3("LastMousePosition", _myLastWorldMouse);
             _myEffect.SetBool("MousePressed", true);
             _myNoInputTimer = 0;
         }
+    }
 
-        
+    private int _myLastCount = 0;
+
+    private void HandleNextStep()
+    {
+        if (_myItem == null) return;
+
+        if (_myLastCount > 0 && _myEffect.aliveParticleCount == 0)
+        {
+            _myEffect.Reinit();
+        }
+
+        _myLastCount = _myEffect.aliveParticleCount;
     }
 
     private void UpdateEffectFromItem()
     {
         if (_myItem == null) return;
-        _myItem.SetEffect(_myEffect);
+
+        if (!_myEffect.HasTexture("ContentTexture")) return;
+
+        _myEffect.SetTexture("ContentTexture", _myTextureQuad.texture);
+        _myEffect.SetFloat("ContentTextureAspect", _myTextureQuad.Aspect());
+        _myEffect.SetFloat("ContentScale", _myTextureQuad.scale);
+        _myEffect.SetVector3("ContentOffset", _myTextureQuad.offset);
+    }
+
+    public bool isClosed()
+    {
+        return _myEffect.aliveParticleCount <= 0;
+    }
+
+    private bool _myIsInCue = false;
+
+    public void IsIncue(bool theIsInCue)
+    {
+        _myIsInCue = theIsInCue;
+    }
+    
+    public bool IsIncue()
+    {
+        
+        return _myIsInCue;
+    }
+
+    public bool IsReached(int theLimit)
+    {
+        return _myEffect.aliveParticleCount >= theLimit;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        handleStop();
-        handleMouseDown();
+        HandleTimer();
+        HandleStop();
+        HandleNextStep();
+        HandleMouseDown();
         UpdateEffectFromItem();
-
-
+        
+        
     }
 }

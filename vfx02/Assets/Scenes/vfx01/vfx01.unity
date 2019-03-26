@@ -135,14 +135,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304336949}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 689760022}
   - {fileID: 1106358476}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1664659330}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689760019
 GameObject:
@@ -215,9 +215,9 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0
+      - m_Value: 0.99
         m_Name: BackgroundScale
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 2
         m_Name: BackgroundTextureAspect
         m_Overridden: 1
@@ -233,10 +233,10 @@ VisualEffect:
       - m_Value: 9.8
         m_Name: Stick Force
         m_Overridden: 1
-      - m_Value: 3.5
+      - m_Value: 1.49
         m_Name: TurbulenceIntensity
         m_Overridden: 1
-      - m_Value: 0.365
+      - m_Value: 0
         m_Name: TurbulenceMinAge
         m_Overridden: 1
       - m_Value: 7.5
@@ -247,6 +247,12 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0.076
         m_Name: TurbulenceThreshold
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: VisitorDistance
+        m_Overridden: 1
+      - m_Value: -25.01
+        m_Name: VisitorForce
         m_Overridden: 1
     m_Vector2f:
       m_Array:
@@ -318,26 +324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de7d14e865f43945a267b3ca0dafe65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myBuildings:
-  - {fileID: 2800000, guid: 5a5f84a0f076ef54d80b5487202c453b, type: 3}
-  - {fileID: 2800000, guid: e813f4943c5d993449f5c6b211eb036d, type: 3}
-  - {fileID: 2800000, guid: e9fc8fb2e8be4f342996cc3c0d9df927, type: 3}
-  - {fileID: 2800000, guid: 2587d31339150ab4094ac311650aac6a, type: 3}
-  - {fileID: 2800000, guid: d7dcba75dc8b5794492e92310166be13, type: 3}
-  - {fileID: 2800000, guid: 63b5d963aef73b84a9dbf339b67af8e7, type: 3}
-  - {fileID: 2800000, guid: c78201f64202ba048bc9c75e683ab13a, type: 3}
-  - {fileID: 2800000, guid: 798c251f7284a7141ae90d8bd9599f2d, type: 3}
-  - {fileID: 2800000, guid: 656769536428e0a4f9b403980bd90381, type: 3}
-  background:
-    quad: {fileID: 0}
-    offset: {x: 0, y: 0}
-    queue: 3003
-    texture: {fileID: 2800000, guid: d382f1ecff588db46b89d112986f578b, type: 3}
-    flip: 0
-    scale: 1
-  myBuildingSwitchTime: 10
-  _mySwitchBuildingByTimer: 1
-  _myCurrentBuilding: 1
 --- !u!95 &689760024
 Animator:
   serializedVersion: 3
@@ -557,7 +543,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1564396183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -629,7 +615,7 @@ Transform:
   m_LocalScale: {x: 21.5, y: 12.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1664659327
 GameObject:
@@ -710,7 +696,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -23}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 304336950}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -830,170 +817,230 @@ MonoBehaviour:
   contentPrefab: {fileID: 4436301727337051723, guid: 194d49820352bc54a8d85450edb62999,
     type: 3}
   contentParent: {fileID: 1106358475}
-  previewPositions: 1
+  previewPositions: 0
   items:
   - mouseArea:
       quad: {fileID: 0}
-      offset: {x: -4.04, y: -6.09}
+      offset: {x: -4.04, y: -6.09, z: 0}
       queue: 2999
       scale: {x: 5.43, y: 4.13}
     content:
       quad: {fileID: 0}
-      offset: {x: -3.59, y: -4.04}
+      offset: {x: -3.59, y: -4.04, z: 0}
       queue: 3003
       texture: {fileID: 2800000, guid: e6e0a5023057e3e4cb75d3a41de60ac1, type: 3}
       flip: 0
       scale: 1.69
+      particleControl: {fileID: 0}
     title:
       quad: {fileID: 0}
-      offset: {x: -3.41, y: -5.05}
+      offset: {x: -3.41, y: -5.05, z: 0}
       queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     date:
       quad: {fileID: 0}
-      offset: {x: -3.52, y: -5.8}
+      offset: {x: -3.52, y: -5.8, z: 0}
       queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     illu:
       quad: {fileID: 0}
-      offset: {x: -1.91, y: -5.76}
+      offset: {x: -1.91, y: -5.76, z: 0}
       queue: 3000
       texture: {fileID: 2800000, guid: a78b59bddfffdbf4395f0dec6f39299d, type: 3}
       flip: 0
       scale: 3.18
+      particleControl: {fileID: 0}
+    lines:
+      quad: {fileID: 0}
+      offset: {x: -4.36, y: -2.46, z: 0}
+      queue: 3004
+      texture: {fileID: 2800000, guid: 08623a449fa54fb4b8e9623fb73888c6, type: 3}
+      flip: 0
+      scale: 4.43
+      particleControl: {fileID: 0}
   - mouseArea:
       quad: {fileID: 0}
-      offset: {x: -0.01, y: 2.24}
+      offset: {x: -0.01, y: 2.24, z: 0}
       queue: 2999
       scale: {x: 6.18, y: 3.99}
     content:
       quad: {fileID: 0}
-      offset: {x: 2.29, y: 3.48}
+      offset: {x: 2.29, y: 3.48, z: 0}
       queue: 3003
       texture: {fileID: 2800000, guid: 3a4a6e9a6978bb149849afcb1a72cc0a, type: 3}
       flip: 0
       scale: 1.75
+      particleControl: {fileID: 0}
     title:
       quad: {fileID: 0}
-      offset: {x: 2.16, y: 3.49}
+      offset: {x: 2.16, y: 3.49, z: 0}
       queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
       flip: 1
       scale: 0.85
+      particleControl: {fileID: 0}
     date:
       quad: {fileID: 0}
-      offset: {x: 2.26, y: 4.18}
+      offset: {x: 2.26, y: 4.18, z: 0}
       queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
       flip: 1
       scale: 0.85
+      particleControl: {fileID: 0}
     illu:
       quad: {fileID: 0}
-      offset: {x: -1.46, y: 2.79}
+      offset: {x: -1.46, y: 2.79, z: 0}
       queue: 3000
       texture: {fileID: 2800000, guid: a78b59bddfffdbf4395f0dec6f39299d, type: 3}
       flip: 1
       scale: 3.15
+      particleControl: {fileID: 0}
+    lines:
+      quad: {fileID: 0}
+      offset: {x: 0.91, y: 0.18, z: 0}
+      queue: 3004
+      texture: {fileID: 2800000, guid: 08623a449fa54fb4b8e9623fb73888c6, type: 3}
+      flip: 1
+      scale: 3.13
+      particleControl: {fileID: 0}
   - mouseArea:
       quad: {fileID: 0}
-      offset: {x: 3.24, y: -5.99}
+      offset: {x: 3.24, y: -5.99, z: 0}
       queue: 2999
       scale: {x: 5.36, y: 4.67}
     content:
       quad: {fileID: 0}
-      offset: {x: 3.48, y: -4.09}
+      offset: {x: 3.48, y: -4.09, z: 0}
       queue: 3003
       texture: {fileID: 2800000, guid: 8587d86997de80e4487b85a58339ade2, type: 3}
       flip: 0
       scale: 1.76
+      particleControl: {fileID: 0}
     title:
       quad: {fileID: 0}
-      offset: {x: 4.28, y: -5.05}
+      offset: {x: 4.28, y: -5.05, z: 0}
       queue: 3002
       texture: {fileID: 2800000, guid: 0b521d375f1ad6249a95b322f5c147cc, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     date:
       quad: {fileID: 0}
-      offset: {x: 4.17, y: -5.78}
+      offset: {x: 4.17, y: -5.78, z: 0}
       queue: 3001
       texture: {fileID: 2800000, guid: f89776ae05be60c4fa04bf503853e716, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     illu:
       quad: {fileID: 0}
-      offset: {x: 5.22, y: -4.45}
+      offset: {x: 5.22, y: -4.45, z: 0}
       queue: 3000
       texture: {fileID: 2800000, guid: f383a3b4dcb4f7a4cbb705f7a69fa79c, type: 3}
       flip: 0
       scale: 2.77
+      particleControl: {fileID: 0}
+    lines:
+      quad: {fileID: 0}
+      offset: {x: 2.88, y: -2.33, z: 0}
+      queue: 3004
+      texture: {fileID: 2800000, guid: 08623a449fa54fb4b8e9623fb73888c6, type: 3}
+      flip: 0
+      scale: 5.43
+      particleControl: {fileID: 0}
   - mouseArea:
       quad: {fileID: 0}
-      offset: {x: -8.87, y: 1.31}
+      offset: {x: -8.87, y: 1.31, z: 0}
       queue: 2999
       scale: {x: 4.87, y: 4.61}
     content:
       quad: {fileID: 0}
-      offset: {x: -6.91, y: 2.08}
+      offset: {x: -6.91, y: 2.08, z: 0}
       queue: 3003
       texture: {fileID: 2800000, guid: f897a6b69f243f241b45d48a8c441d42, type: 3}
       flip: 1
       scale: 2.08
+      particleControl: {fileID: 0}
     title:
       quad: {fileID: 0}
-      offset: {x: -8.63, y: 4.31}
+      offset: {x: -8.63, y: 4.31, z: 0}
       queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
       flip: 1
       scale: 0.85
+      particleControl: {fileID: 0}
     date:
       quad: {fileID: 0}
-      offset: {x: -8.52, y: 5.04}
+      offset: {x: -8.52, y: 5.04, z: 0}
       queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
       flip: 1
       scale: 0.85
+      particleControl: {fileID: 0}
     illu:
       quad: {fileID: 0}
-      offset: {x: -9.69, y: 0.49}
+      offset: {x: -9.69, y: 0.49, z: 0}
       queue: 3000
       texture: {fileID: 2800000, guid: beaa732faf8737a429c4d886b0d7f5eb, type: 3}
       flip: 1
       scale: 4.42
+      particleControl: {fileID: 0}
+    lines:
+      quad: {fileID: 0}
+      offset: {x: -7.3, y: -0.54, z: 0}
+      queue: 3004
+      texture: {fileID: 2800000, guid: 08623a449fa54fb4b8e9623fb73888c6, type: 3}
+      flip: 1
+      scale: 2.94
+      particleControl: {fileID: 0}
   - mouseArea:
       quad: {fileID: 0}
-      offset: {x: -10.19, y: -6.03}
+      offset: {x: -10.19, y: -6.03, z: 0}
       queue: 2999
       scale: {x: 4.42, y: 4.48}
     content:
       quad: {fileID: 0}
-      offset: {x: -11.36, y: -4.7}
+      offset: {x: -11.36, y: -4.7, z: 0}
       queue: 3003
       texture: {fileID: 2800000, guid: 152d1bd7b9382f349983b7a296c082fb, type: 3}
       flip: 0
       scale: 2.66
+      particleControl: {fileID: 0}
     title:
       quad: {fileID: 0}
-      offset: {x: -8.84, y: -4.96}
+      offset: {x: -8.84, y: -4.96, z: 0}
       queue: 3002
       texture: {fileID: 2800000, guid: 3275f94c1b984644786da85c4632acda, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     date:
       quad: {fileID: 0}
-      offset: {x: -8.95, y: -5.74}
+      offset: {x: -8.95, y: -5.74, z: 0}
       queue: 3001
       texture: {fileID: 2800000, guid: 97a4060c4299d114e9e1a86f6bc8fac6, type: 3}
       flip: 0
       scale: 0.85
+      particleControl: {fileID: 0}
     illu:
       quad: {fileID: 0}
-      offset: {x: -8.89, y: -4.92}
+      offset: {x: -8.89, y: -4.92, z: 0}
       queue: 3000
       texture: {fileID: 2800000, guid: fa7627ff8c4c988468fafaf2f64017a5, type: 3}
       flip: 0
       scale: 3.41
+      particleControl: {fileID: 0}
+    lines:
+      quad: {fileID: 0}
+      offset: {x: -10.54, y: -2.17, z: 0}
+      queue: 3004
+      texture: {fileID: 2800000, guid: 08623a449fa54fb4b8e9623fb73888c6, type: 3}
+      flip: 0
+      scale: 4.95
+      particleControl: {fileID: 0}
